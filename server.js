@@ -22,8 +22,11 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
-app.use('/store', require('./controllers/routeController'));
+app.use('/product', require('./controllers/routeController'));
 
 app.listen(PORT, () => {
   console.log('Open for Business', PORT)
 })
+
+
+///products/:id/buy
