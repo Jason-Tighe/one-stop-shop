@@ -1,4 +1,72 @@
 /* Time to start working on the CSS, I'm not sure how I'm going to do this tbh.  */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin-top: 10vh;
+  background: blue;
+  height: 50vh;
+  width: 100vw;
+}
+
 .container{
+  text-align: center;
   background: red;
+  display: grid;
+  grid-template-columns: 1fr 256px 1fr;
+}
+
+.productName{
+  background: green;
+  font-size: 3rem;
+  grid-column: span 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+}
+
+.numbBoi{
+  background: grey;
+  display: flex;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-self: center;
+  align-content: space-around;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.productPrice{
+  background: purple;
+  z-index: 1;
+}
+
+.qty{
+  background: pink;
+  z-index: 2;
+}
+
+.scrip{
+  background: teal;
+  grid-column: span 1/3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.pic{
+  background: orange;
+  grid-column: span 1/3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+nav{
+  text-align: center;
+  background: yellow;
+  grid-column: span 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
 }
