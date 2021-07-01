@@ -5,17 +5,17 @@ class Index extends React.Component{
   render(){
     const {product} = this.props;
     return(
-        <DefaultLayout title={'Product Index Page'} styles={[{key:0, href:'/css/app.css'}]}>
+        <DefaultLayout title={'Trick\'s Sporting Goods'} styles={[{key:0, href:'/css/indexpage.css'}]}>
           <nav>
-            <a href="/product/new">New Product?</a>
+            <a href="/product/new">New Merch</a>
           </nav>
-          <h1>
+          <h1 className = "container">
           <ul>
               {product.map((product)=> {
                 return (
                   <li key={product._id}>
                     <img src={product.img}/><br/>
-                    The {' '} <a href ={`/product/${product._id}`}> {product.name} </a> {' '} :{product.price} Gold! Qty:{product.qty}<br></br>
+                    {' '} <a href ={`/product/${product._id}`}> {product.name} </a> {' '}{product.price} Gold! Qty:{product.qty}<br></br>
                     <form method="POST" action={`/product/${product._id}?_method=DELETE`}>
                     <input type="submit" value="DELETE"/>
                     </form>
