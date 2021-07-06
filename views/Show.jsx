@@ -5,7 +5,7 @@ class Show extends React.Component{
   render(){
     const product = this.props.product
     return (
-      <DefaultLayout styles={[{key:0, href:'/css/showpage.css'}]}>
+      <DefaultLayout styles={[{key:1, href:'/css/showpage.css'}, {key:0, href:'/css/app.css'}]}>
         <h1>Trick's  Sporting Goods</h1>
         <div className = "container">
           <div className = "productName">{product.name} </div>
@@ -17,7 +17,7 @@ class Show extends React.Component{
           </div>
           <div className = "scrip">Description: {product.description}</div>
         <nav className = "Nav">
-          <a  className = "home" href="/product/">Home</a>
+          <a  className = "home" href="/product/">Home</a><br/>
           <a className = "contact" href = "/product/contact">Contact Info</a>
         </nav>
         </div>

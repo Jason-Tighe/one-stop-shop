@@ -1,14 +1,32 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
-h1{
+
+
+body{
+  background: url(https://wallpaperaccess.com/full/1900952.jpg)center center fixed;
+  background-size: cover;
+}
+
+.new{
+  text-align: center;
+}
+
+.new:hover{
+  background: rgba(241, 241, 241, 0.37);
+}
+
+h2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr
 }
+
 ul{
+  border: solid 10px black;
   grid-column: span 1/4;
-  background: grey;
+  background: transparent;
   display:inline-block;
   display: grid;
   justify-content: center;
@@ -40,6 +58,15 @@ img{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   height: 40%;
 
+}
+
+input{
+  font-family: fantasy;
+  background: white;
+}
+
+input:hover{
+  background: transparent;
 }
 
 img{

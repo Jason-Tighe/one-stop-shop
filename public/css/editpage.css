@@ -1,0 +1,66 @@
+textarea[type=text] {
+  word-wrap:break-word;
+  word-break:break-all;
+  width: 300px;
+  height: 150px;
+}
+
+body{
+  background: rgb(244, 242, 115);
+  background-image:linear-gradient(rgb(61, 214, 210) 1px, transparent 1px);
+  background-size: 4vh 3vw;
+
+}
+
+.container{
+  display: flex;
+  flex-flow: column;
+  align-items:  center;
+  text-align: center;
+}
+
+.name{
+  background: transparent;
+}
+
+.scrip{
+  background: transparent;
+}
+
+.pic{
+  background: transparent;
+}
+
+.price{
+  background: transparent;
+  text-align: center;
+
+}
+
+.qty{
+  background: transparent;
+  text-align: center;
+
+}
+
+.btn{
+  background: transparent;
+}
+
+input:hover{
+  background: white;
+}
+
+textarea:hover{
+  background: white;
+}
+
+nav{
+  text-align: center;
+  background: transparent;
+  margin-top: 30vh;
+}
+
+nav:hover{
+  background: white;
+}
