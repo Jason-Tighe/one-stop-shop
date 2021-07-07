@@ -12,7 +12,9 @@ class Show extends React.Component{
           <div className = "numbBoi">
             <div className = "productPrice"> Price: {product.price} Gold </div>
             <div className = "qty"> Available:{product.qty} </div>
-            <div className ="buy">BUY</div>
+            <form action={`/product/${product._id}/buy`}>
+              <input className="button"  type="submit" value="BUY"/>
+            </form>
             <img className = "pic" src={product.img}/>
           </div>
           <div className = "scrip">Description: {product.description}</div>

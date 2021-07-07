@@ -22,7 +22,9 @@ const dataController = {
           })
         } else {
           res.locals.data.product = item;
+          console.log("nooo")
           next();
+
         }
     })
   },
@@ -59,6 +61,19 @@ const dataController = {
      } else {
        res.locals.data.product = updatedProduct;
        next();
+     }
+   })
+ },
+ buy(req, res, next){
+   Product.findByIdAndUpdate(req.params.id, {$inc: { "qty": -1} }, {new: true}, (err, updatedQty)=>{
+     if(err){
+       res.status(404).send({
+         msg: err.message
+       })
+     } else {
+       res.locals.data.product = updatedQty;
+       next();
+       console.log("wooo")
      }
    })
  }
